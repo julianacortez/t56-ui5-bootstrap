@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script 
+        type="text/javascript"
+        src="https://ui5.sap.com/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m"
+        >
+    </script>
+
+    <script>
+        var oInput = new sap.m.Input();
+        oInput.placeAt("root");
+
+        var oNota = new sap.m.RatingIndicator();
+        oNota.placeAt("root").setValue(4);
+
+        var oSlider = new sap.m.Slider();
+        //oSlider.placeAt("root", "first");
+        oSlider
+            .setValue(60)
+            .placeAt("root", "first");
+    </script>
+
+</head>
+<body>
+    <div id="root" class="sapUiBody">
+
+    </div>
+</body>
+</html>
